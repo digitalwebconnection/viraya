@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+/* ===== PERFORMANCE OPTIMIZATION ===== */
+
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  
+}
