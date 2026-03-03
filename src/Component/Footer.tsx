@@ -5,6 +5,9 @@ import {
   Instagram,
   Linkedin,
   Code2,
+  Phone,
+  Mail,
+ Pin,
 } from "lucide-react";
 import logo from "../assets/Virayalogo.png";
 import { useRef, useState } from "react";
@@ -118,12 +121,38 @@ const Footer = () => {
             <h3 className="text-white font-semibold font-['Playfair_Display'] mb-6 text-lg">
               Let's Build Your Future
             </h3>
+<div className="space-y-4 pb-5">
+  
+  {/* Phone */}
+  <a 
+    href="tel:+919821377645" 
+    className="flex gap-4 items-center hover:text-[#c7a25a] transition"
+  >
+    <Phone size={25} className="text-[#c7a25a]" />
+    +91 9821377645
+  </a>
 
-            <p className="text-sm text-gray-500 mb-6">
-              Looking for premium plots in prime locations? Connect with us
-              today and secure your dream investment.
-            </p>
+  {/* Email */}
+  <a 
+    href="mailto:param@viraya.in" 
+    className="flex gap-5 items-center hover:text-[#c7a25a] transition"
+  >
+    <Mail size={25} className="text-[#c7a25a]" />
+    param@viraya.in
+  </a>
 
+  {/* Address */}
+  <a 
+    href="https://www.google.com/maps/search/?api=1&query=730+Shyamal+Cross+Rd,+Rajmani+Society,+Shyamal,+Ahmedabad,+Gujarat+380015"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex gap-6 items-start hover:text-[#c7a25a] transition"
+  >
+    <Pin size={45} className="text-[#c7a25a] mt-1" />
+    730, Shyamal Cross Rd, Rajmani Society, Shyamal, Ahmedabad, Gujarat 380015
+  </a>
+
+</div>
             <button
               onClick={() => setOpen(true)}
               className="bg-[#c7a25a] hover:bg-white hover:text-black text-black px-12 py-4 font-semibold tracking-wide transition-all duration-300 shadow-xl rounded-2xl active:scale-95"

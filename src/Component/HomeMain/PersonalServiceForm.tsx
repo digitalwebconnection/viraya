@@ -62,14 +62,14 @@ export default function PersonalServiceForm({
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                 
                 {/* Section 1: Contact Details */}
-                <div className="space-y-3">
+                <div className="space-y-1">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div className="group space-y-2">
+                    <div className="group space-y-1">
                       <label className="text-[10px] font-bold uppercase tracking-widest text-slate-900 ml-1">Your Identity</label>
                       <input
                         type="text"
                         placeholder="John Doe"
-                        className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-4 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all"
+                        className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-2 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all"
                       />
                     </div>
                     <div className="group space-y-2">
@@ -77,17 +77,17 @@ export default function PersonalServiceForm({
                       <input
                         type="email"
                         placeholder="john@example.com"
-                        className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-4 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all"
+                        className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-2 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all"
                       />
                     </div>
                   </div>
 
-                  <div className="group space-y-2">
+                  <div className="group space-y-1">
                     <label className="text-[10px] font-bold uppercase tracking-widest text-slate-900 ml-1">Direct Reach (WhatsApp)</label>
                     <input
                       type="tel"
                       placeholder="+91 XXXXX XXXXX"
-                      className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-4 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all"
+                      className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-2 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all"
                     />
                   </div>
                 </div>
@@ -95,16 +95,16 @@ export default function PersonalServiceForm({
                 <div className="h-px bg-slate-100" />
 
                 {/* Section 2: Preferences */}
-                <div className="space-y-4">
+                <div className="space-y-2">
                   {/* Budget Selector */}
-                  <div className="space-y-2">
+                  <div className="space-y-1">
                     <p className="text-sm font-bold text-slate-800 flex items-center gap-2">
                       <span className="w-6 h-6 rounded-full bg-slate-900 text-white text-[10px] flex items-center justify-center">01</span>
                       What is your preferred budget?
                     </p>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                       {["₹2 – 3 Cr", "₹3 – 4 Cr", "Above 4 Cr"].map((item) => (
-                        <label key={item} className="relative flex items-center justify-center p-4 border-2 border-slate-100 rounded-2xl cursor-pointer hover:border-[#b68d5c]/20 hover:bg-slate-50 transition-all has-checked:border-[#b68d5c] has-checked:bg-[#b68d5c]/5 group">
+                        <label key={item} className="relative flex items-center justify-center p-2 border-2 border-slate-100 rounded-2xl cursor-pointer hover:border-[#b68d5c]/20 hover:bg-slate-50 transition-all has-checked:border-[#b68d5c] has-checked:bg-[#b68d5c]/5 group">
                           <input type="radio" name="budget" className="hidden peer" />
                           <span className="text-sm font-medium text-slate-500 peer-checked:text-[#b68d5c] group-hover:text-slate-900">
                             {item}
@@ -115,14 +115,14 @@ export default function PersonalServiceForm({
                   </div>
 
                   {/* Timeline Selector */}
-                  <div className="space-y-2">
+                  <div className="space-y-1">
                     <p className="text-sm font-bold text-slate-800 flex items-center gap-2">
                       <span className="w-6 h-6 rounded-full bg-slate-900 text-white text-[10px] flex items-center justify-center">02</span>
                       When are you looking to acquire?
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                       {["Immediately", "3 Months", "6 Months"].map((item) => (
-                        <label key={item} className="relative flex items-center justify-center p-4 border-2 border-slate-100 rounded-2xl cursor-pointer hover:border-[#b68d5c]/20 hover:bg-slate-50 transition-all has-checked:border-[#b68d5c] has-checked:bg-[#b68d5c]/5 group">
+                        <label key={item} className="relative flex items-center justify-center p-2 border-2 border-slate-100 rounded-2xl cursor-pointer hover:border-[#b68d5c]/20 hover:bg-slate-50 transition-all has-checked:border-[#b68d5c] has-checked:bg-[#b68d5c]/5 group">
                           <input type="radio" name="timeline" className="hidden peer" />
                           <span className="text-sm font-medium text-slate-500 peer-checked:text-[#b68d5c] group-hover:text-slate-900">
                             {item}
@@ -134,12 +134,12 @@ export default function PersonalServiceForm({
                 </div>
 
                 {/* Submit Action */}
-                <div className="pt-2">
+                <div className="pt-1">
                   <motion.button
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.98 }}
                     type="submit"
-                    className="group w-full bg-[#b68d5c] hover:bg-slate-900 text-white py-6 rounded-2xl font-bold tracking-[0.2em] uppercase text-xs shadow-xl shadow-[#b68d5c]/20 transition-all flex items-center justify-center gap-3"
+                    className="group w-full bg-[#b68d5c] hover:bg-slate-900 text-white py-4 rounded-2xl font-bold tracking-[0.2em] uppercase text-xs shadow-xl shadow-[#b68d5c]/20 transition-all flex items-center justify-center gap-3"
                   >
                     Submit Inquiry
                     <Send size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

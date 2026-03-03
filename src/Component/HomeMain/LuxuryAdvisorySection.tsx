@@ -9,7 +9,7 @@ const advisoryPoints = [
     description:
       "Every residence is evaluated for intelligent space planning and long-term usability beyond visual appeal.",
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://jll-global-gdim-res.cloudinary.com/image/upload/v1756375756/IN/Horizon/Resi/PROD/JLL_Ahmedabad_Triveni%2084_13161_EXT_5.jpg",
   },
   {
     badge: "Community Ecosystem",
@@ -17,7 +17,7 @@ const advisoryPoints = [
     description:
       "Assessment includes neighbourhood profile, social ecosystem strength, and infrastructure growth impact.",
     image:
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6",
+      "https://newprojects.99acres.com/projects/aaron_associates_llp/aaron_elinor_108/images/p3bwng6_1739252892_568525577_O.jpg",
   },
   {
     badge: "Resale Liquidity",
@@ -25,7 +25,7 @@ const advisoryPoints = [
     description:
       "Builder credibility, construction quality, legal clarity, and long-term resale strength are deeply analyzed.",
     image:
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
+      "https://vital-space-media.s3.ap-south-1.amazonaws.com/project_gallery/webthumb/projectGallery-224594-23-02-2024.webp",
   },  
 ];
 
@@ -33,7 +33,7 @@ const LuxuryAdvisorySection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="residential" className="bg-white py-20 px-6">
+    <section id="residential" className="bg-white py-10 px-6">
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="text-2xl md:text-3xl font-serif font-bold text-[#C7A25A] ">Why Choose Us</h1>
         {/* HEADER */}
