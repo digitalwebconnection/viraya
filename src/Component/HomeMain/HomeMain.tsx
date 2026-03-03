@@ -12,6 +12,7 @@ import PrivateConsultationSection from "./PrivateConsultationSection"
 import ReelsShowcaseSection from "./ReelsShowcaseSection"
 import StrategicLandSection from "./StrategicLandSection"
 import TestimonialsSection from "./TestimonialsSection"
+import TrustedDevelopersSlider from "./TrustedDevelopersSlider"
 import VirayaAdvisoryModelSection from "./VirayaAdvisoryModelSection"
 import VisionMission from "./VisionMission"
 import WhyClientsChooseViraya from "./WhyClientsChooseViraya"
@@ -25,6 +26,7 @@ const HomeMain = () => {
       <AboutVirayaSection />
       <FounderSection />
       <Philosophy />
+      <TrustedDevelopersSlider/>
       <VirayaAdvisoryModelSection />
       <LuxuryAdvisorySection />
       <CommercialInvestmentAdvisory />
