@@ -113,7 +113,7 @@ const HeroSection = () => {
                 <motion.div variants={itemVariants} className="mb-18 mt-6 z-10 flex flex-wrap gap-6">
                     <button
                         onClick={() => setOpen(true)}
-                        className="bg-[#b68d5c] hover:bg-white hover:text-black text-black px-12 py-4 font-semibold tracking-wide transition-all duration-300 shadow-xl rounded-full active:scale-95 font-['Inter']"
+                        className="bg-[#b68d5c] hover:bg-white hover:text-black text-black px-12 py-2 font-semibold tracking-wide transition-all duration-300 shadow-xl rounded-full active:scale-95 font-['Inter']"
                     >
                         PERSONAL SERVICE
                     </button>
@@ -132,7 +132,7 @@ const HeroSection = () => {
                 transition={{ delay: 1.2, duration: 1 }}
                 className="absolute bottom-0 left-0 w-full bg-white/5 backdrop-blur-md border-t border-white/10 hidden md:block"
             >
-                <div className="max-w-7xl mx-auto grid grid-cols-3 py-8">
+                <div className="max-w-7xl mx-auto grid grid-cols-3 py-4">
 
                     {/* Column 1 */}
                     <div className="text-center border-r border-white/10 px-4">

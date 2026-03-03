@@ -41,13 +41,13 @@ export default function PersonalServiceForm({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative bg-white w-full max-w-2xl rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.3)] overflow-hidden flex flex-col max-h-[90vh]"
+            className="relative bg-white w-full mt-5 max-w-lg rounded-[2.5rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.3)] overflow-hidden flex flex-col max-h-[70vh]"
           >
             {/* Header: Aesthetic Gradient Top */}
             <div className="relative px-8 pt-10 pb-6 bg-linear-to-b from-slate-50 to-white">
               <button
                 onClick={onClose}
-                className="absolute top-6 right-8 p-2 text-slate-400 hover:text-slate-900 hover:bg-slate-100 rounded-full transition-all"
+                className="absolute top-8 right-8 p-2 text-slate-400 hover:text-slate-900 hover:bg-slate-100 rounded-full transition-all"
               >
                 <X size={22} />
               </button>

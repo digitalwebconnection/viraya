@@ -5,11 +5,11 @@ import PersonalServiceForm from "../../Component/HomeMain/PersonalServiceForm";
 import founder from "../../assets/iloveimg/founder.png"
 
 const FounderSection = () => {
-     const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <section
-    id="founder"
-    className="relative bg-white overflow-hidden py-12">
+      id="founder"
+      className="relative bg-white overflow-hidden py-12">
 
       {/* Soft Background Tint */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#1F2A36]/5 -skew-x-12 translate-x-32 z-0" />
@@ -124,18 +124,18 @@ const FounderSection = () => {
 
           {/* CTA */}
           <div className="flex gap-8 mt-12 items-center">
-             <button
-                        onClick={() => setOpen(true)}
-                        className="bg-[#b68d5c] hover:bg-white hover:text-black text-black px-12 py-4 font-semibold tracking-wide transition-all duration-300 shadow-xl rounded-full active:scale-95 font-['Inter']"
-                    >
-                        PERSONAL SERVICE
-                    </button>
-                    <PersonalServiceForm
-                        isOpen={open}
-                        onClose={() => setOpen(false)}
-                    />
+            <button
+              onClick={() => setOpen(true)}
+              className="bg-[#b68d5c] hover:bg-white hover:text-black text-black px-12 py-4 font-semibold tracking-wide transition-all duration-300 shadow-xl rounded-full active:scale-95 font-['Inter']"
+            >
+              PERSONAL SERVICE
+            </button>
+            <PersonalServiceForm
+              isOpen={open}
+              onClose={() => setOpen(false)}
+            />
 
-          
+
           </div>
         </div>
 
@@ -145,14 +145,14 @@ const FounderSection = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="relative h-180"
+          className="relative h-130 -mt-50"
         >
           <div className="relative bg-white  overflow-hidden ">
 
             <img
               src={founder}
               alt="Param Doshi"
-              className="w-full h-full object-cover  bg-cover"
+              className="w-[80%] h-full object-cover  bg-cover"
             />
 
             {/* Floating Badge */}
@@ -185,7 +185,8 @@ const FounderSection = () => {
       </div>
 
       {/* Fonts */}
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@400;600;700&display=swap');
       `}} />
     </section>
