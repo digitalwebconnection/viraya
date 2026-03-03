@@ -4,9 +4,7 @@ import Pre from "../../assets/iloveimg/5.png"
 
 const PreLeasedInvestmentSection = () => {
   return (
-    <section className="bg-[#ffffff]  py-5 px-6 relative overflow-hidden">
-
-    
+    <section id="preleased" className="bg-[#ffffff]  py-5 px-6 relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center relative z-10">
 

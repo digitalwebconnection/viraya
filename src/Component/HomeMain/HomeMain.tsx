@@ -22,8 +22,8 @@ const HomeMain = () => {
     <>
       <HeroSection />
       <CredibilitySection />
-      <IndustryProblemSection />
       <AboutVirayaSection />
+      <IndustryProblemSection />
       <FounderSection />
       <Philosophy />
       <TrustedDevelopersSlider/>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle, ShieldCheck, PieChart, Users, Zap, ArrowRight } from "lucide-react";
+import { CheckCircle, ShieldCheck, PieChart, Users, Zap } from "lucide-react";
 
 const WhyChooseViraya = () => {
   const benefits = [
@@ -31,7 +31,7 @@ const WhyChooseViraya = () => {
   ];
 
   return (
-    <section className="relative bg-white py-12 md:py-18 overflow-hidden">
+    <section id="whyviraya" className="relative bg-white py-12 md:py-18 overflow-hidden">
       {/* Background Parallax Element */}
       <motion.div 
         initial={{ opacity: 0 }}
@@ -74,12 +74,6 @@ const WhyChooseViraya = () => {
                 </p>
               </div>
 
-              <motion.button
-                whileHover={{ gap: "24px" }}
-                className="mt-12 flex items-center gap-4 text-[#1F2A36] font-montserrat font-bold text-xs uppercase tracking-[0.3em] group transition-all"
-              >
-                The Advisory Philosophy <ArrowRight size={16} className="text-[#C7A25A] group-hover:translate-x-2 transition-transform" />
-              </motion.button>
             </motion.div>
           </div>
 

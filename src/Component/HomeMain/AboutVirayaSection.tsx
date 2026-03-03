@@ -4,7 +4,6 @@ import aboutimg from "../../assets/iloveimg/2.jpg";
 const AboutVirayaSection = () => {
   return (
     <section
-      id="about"
       className="relative py-2 overflow-hidden text-white"
     >
       {/* SECTION BACKGROUND (Not Fixed) */}

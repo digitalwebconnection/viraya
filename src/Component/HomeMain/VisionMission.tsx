@@ -119,16 +119,6 @@ const VisionMissionWhite = () => {
                         </motion.div>
                     ))}
                 </motion.div>
-
-                {/* Footer Line */}
-                <div className="relative mt-32 h-px w-full bg-gray-100 overflow-hidden">
-                    <motion.div
-                        initial={{ left: "-100%" }}
-                        whileInView={{ left: "100%" }}
-                        transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
-                        className="absolute top-0 h-full w-1/3 bg-linear-to-r from-transparent via-[#C7A25A]/40 to-transparent"
-                    />
-                </div>
             </div>
         </div>
     );

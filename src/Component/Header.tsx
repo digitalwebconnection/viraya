@@ -1,10 +1,12 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "../assets/Virayalogo.png";
+import PersonalServiceForm from "./HomeMain/PersonalServiceForm";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
   const lastScrollY = useRef(0);
 
@@ -27,69 +29,158 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", id: "home" },
-    { name: "About", id: "about" },
-    { name: "Services", id: "services" },
-    { name: "Projects", id: "projects" },
+    { name: "About Us", id: "about" },
     { name: "Insights", id: "insights" },
     { name: "Founder", id: "founder" },
-    { name: "Contact", id: "contact" },
+    { name: "Partners", id: "partners" },
+    { name: "Protocol", id: "protocol" },
+    { name: "Why Viraya", id: "whyviraya" },
+  ];
+
+  const serviceLinks = [
+    { name: "Residential", id: "residential" },
+    { name: "Commercial", id: "commercial" },
+    { name: "Pre-Leased", id: "preleased" },
+    { name: "Plot Advisory", id: "plotadvisory" },
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-500 ${
-        showHeader ? "translate-y-0" : "-translate-y-2"
-      } bg-[#1F2A36] shadow-lg`}
-    >
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center py-3">
+    <>
+      <header
+        className={`fixed top-0 left-0 w-full z-50 transition-transform duration-500 ${
+          showHeader ? "translate-y-0" : "-translate-y-2"
+        } bg-[#1F2A36] shadow-lg`}
+      >
+        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center py-3">
+          
+          {/* Logo */}
+          <a href="#home">
+            <img
+              src={logo}
+              alt="Viraya Realty Logo"
+              className="h-16 w-auto object-contain"
+            />
+          </a>
 
-        {/* Logo */}
-        <a href="#home">
-          <img
-            src={logo}
-            alt="Viraya Realty Logo"
-            className="h-16 w-auto object-contain"
-          />
-        </a>
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-8 font-['Playfair_Display'] text-white">
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8 font-['Playfair_Display']">
-          {navLinks.map((link, index) => (
-            <a
-              key={index}
-              href={`#${link.id}`}
-              className="text-white hover:text-[#c7a25a] font-medium transition duration-300 relative group"
+            {navLinks.slice(0, 6).map((link, index) => (
+              <a
+                key={index}
+                href={`#${link.id}`}
+                className="hover:text-[#c7a25a] transition duration-300"
+              >
+                {link.name}
+              </a>
+            ))}
+
+            {/* Services Dropdown */}
+            <div className="relative group">
+              <button className="flex items-center gap-1 hover:text-[#c7a25a] transition">
+                Services <ChevronDown size={16} />
+              </button>
+
+              <div className="absolute left-0 mt-4 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                {serviceLinks.map((service, index) => (
+                  <a
+                    key={index}
+                    href={`#${service.id}`}
+                    className="block px-4 py-3 hover:bg-gray-100"
+                  >
+                    {service.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {navLinks.slice(6).map((link, index) => (
+              <a
+                key={index}
+                href={`#${link.id}`}
+                className="hover:text-[#c7a25a] transition duration-300"
+              >
+                {link.name}
+              </a>
+            ))}
+
+            {/* Contact Button */}
+            <button
+              onClick={() => setOpen(true)}
+              className="hover:text-[#c7a25a] transition duration-300"
             >
-              {link.name}
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#c7a25a] transition-all duration-300 group-hover:w-full"></span>
-            </a>
-          ))}
-        </nav>
+              Contact
+            </button>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-white">
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-white">
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </div>
-      </div>
 
-      {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="md:hidden bg-[#1F2A36] shadow-lg px-6 py-6 space-y-5">
-          {navLinks.map((link, index) => (
-            <a
-              key={index}
-              href={`#${link.id}`}
-              className="block text-white hover:text-[#c7a25a] transition text-lg"
-              onClick={() => setIsOpen(false)}
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden bg-[#1F2A36] px-6 py-6 space-y-5 text-white">
+            {navLinks.slice(0, 6).map((link, index) => (
+              <a
+                key={index}
+                href={`#${link.id}`}
+                className="block"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </a>
+            ))}
+
+            <div>
+              <p className="font-semibold mb-2">Services</p>
+              {serviceLinks.map((service, index) => (
+                <a
+                  key={index}
+                  href={`#${service.id}`}
+                  className="block ml-4 mb-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {service.name}
+                </a>
+              ))}
+            </div>
+
+            {navLinks.slice(6).map((link, index) => (
+              <a
+                key={index}
+                href={`#${link.id}`}
+                className="block"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </a>
+            ))}
+
+            {/* Mobile Contact */}
+            <button
+              onClick={() => {
+                setIsOpen(false);
+                setOpen(true);
+              }}
+              className="block"
             >
-              {link.name}
-            </a>
-          ))}
-        </div>
-      )}
-    </header>
+              Contact
+            </button>
+          </div>
+        )}
+      </header>
+
+      {/* ✅ POPUP OUTSIDE HEADER */}
+      <PersonalServiceForm
+        isOpen={open}
+        onClose={() => setOpen(false)}
+      />
+    </>
   );
 };
 

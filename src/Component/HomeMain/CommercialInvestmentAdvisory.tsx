@@ -62,7 +62,7 @@ const solutions = [
 ];
 
   return (
-    <section className="bg-white py-32 px-6">
+    <section id="commercial" className="bg-white py-32 px-6">
       <div className="max-w-7xl mx-auto">
 
         {/* HEADER */}

@@ -45,7 +45,7 @@ const VirayaAdvisoryProtocolSplit = () => {
   }, []);
 
   return (
-    <section className="relative bg-[#ffffff] py-16 overflow-hidden">
+    <section id="protocol" className="relative bg-[#ffffff] py-16 overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#fcfaf7] -skew-x-12 translate-x-1/2 z-0" />
 

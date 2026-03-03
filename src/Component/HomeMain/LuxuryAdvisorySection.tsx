@@ -33,7 +33,7 @@ const LuxuryAdvisorySection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="services" className="bg-white py-20 px-6">
+    <section id="residential" className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="text-2xl md:text-3xl font-serif font-bold text-[#C7A25A] ">Why Choose Us</h1>
         {/* HEADER */}

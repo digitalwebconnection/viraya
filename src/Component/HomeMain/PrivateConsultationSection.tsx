@@ -19,13 +19,13 @@ const VirayaSection = () => {
   ];
 
   return (
-    <div className="py-10 bg-[#ffffff] font-['Lora'] text-[#1F2A36] selection:bg-[#C7A25A] selection:text-white">
+    <div className=" bg-[#ffffff] font-['Lora'] text-[#1F2A36] selection:bg-[#C7A25A] selection:text-white">
       
       {/* Main Hero Section */}
-      <section className="relative flex flex-col lg:flex-row min-h-screen overflow-hidden">
+      <section className="relative flex max-w-7xl mx-auto flex-col lg:flex-row min-h-screen overflow-hidden">
         
         {/* Left Side: Consultation Hook */}
-        <div className="w-full lg:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center bg-white">
+        <div className="w-full lg:w-1/2  flex flex-col justify-center bg-white">
           <motion.div 
             initial="initial"
             animate="animate"

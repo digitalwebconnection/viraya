@@ -7,7 +7,9 @@ import founder from "../../assets/iloveimg/founder.png"
 const FounderSection = () => {
      const [open, setOpen] = useState(false);
   return (
-    <section className="relative bg-white overflow-hidden py-12">
+    <section
+    id="founder"
+    className="relative bg-white overflow-hidden py-12">
 
       {/* Soft Background Tint */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#1F2A36]/5 -skew-x-12 translate-x-32 z-0" />

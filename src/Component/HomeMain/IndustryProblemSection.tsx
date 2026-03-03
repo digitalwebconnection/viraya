@@ -15,10 +15,11 @@ const IndustryProblemSection = () => {
   return (
     <section 
       ref={containerRef}
+      id="insights"
       className="relative py-12 bg-[#ffffff] overflow-hidden"
     >
 
-      <div className="max-w-7xl mx-auto px-0 relative z-10">
+      <div  className="max-w-7xl mx-auto px-0 relative z-10">
         
         {/* Section Label with Letter Spacing Animation */}
         <div className="flex justify-center mb-12">
@@ -29,7 +30,7 @@ const IndustryProblemSection = () => {
             className="px-8 py-3 border  border-[#c7a25a] rounded-full text-[#c7a25a] text-[10px] uppercase font-bold tracking-[0.5em]"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            Section 03 — The Industry Problem
+            The Industry Problem
           </motion.span>
         </div>
 

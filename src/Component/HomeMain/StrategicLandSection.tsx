@@ -45,7 +45,7 @@ const StrategicLandAdvisory = () => {
   ];
 
   return (
-    <section className="relative bg-[#1F2A36] py-14 overflow-hidden">
+    <section id="plotadvisory" className="relative bg-[#1F2A36] py-14 overflow-hidden">
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 

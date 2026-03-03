@@ -16,7 +16,7 @@ const logos = [
 
 export default function TrustedDevelopersSlider() {
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section id="partners" className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-['Playfair_Display'] font-semibold text-gray-900 mb-4">
           Trusted Developers We Work With

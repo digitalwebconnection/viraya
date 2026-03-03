@@ -49,7 +49,7 @@ const CredibilitySection = () => {
   ];
 
   return (
-    <section className="relative py-14 bg-white overflow-hidden">
+    <section id="about" className="relative  py-14 bg-white overflow-hidden">
 
       {/* Floating Gold Aura */}
       <motion.div
