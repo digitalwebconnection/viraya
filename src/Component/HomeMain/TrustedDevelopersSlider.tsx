@@ -18,10 +18,10 @@ export default function TrustedDevelopersSlider() {
   return (
     <section className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+        <h2 className="text-3xl md:text-4xl font-['Playfair_Display'] font-semibold text-gray-900 mb-4">
           Trusted Developers We Work With
         </h2>
-        <p className="text-gray-500 max-w-5xl mx-auto mb-12">
+        <p className="text-gray-500 font-serif max-w-5xl mx-auto mb-12">
           We collaborate with reputed developers who share our commitment to quality, transparency and timely delivery.
         </p>
       </div>
