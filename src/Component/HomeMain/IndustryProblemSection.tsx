@@ -16,13 +16,13 @@ const IndustryProblemSection = () => {
     <section 
       ref={containerRef}
       id="insights"
-      className="relative py-12 bg-[#ffffff] overflow-hidden"
+      className="relative py-6 md:py-12 bg-[#ffffff] overflow-hidden"
     >
 
       <div  className="max-w-7xl mx-auto px-0 relative z-10">
         
         {/* Section Label with Letter Spacing Animation */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-6">
           <motion.span 
             initial={{ opacity: 0, letterSpacing: "0.2em" }}
             whileInView={{ opacity: 1, letterSpacing: "0.5em" }}
@@ -77,7 +77,7 @@ const IndustryProblemSection = () => {
                 alt="Luxury Towers"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-[#1f2a36]/90 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#1f2a36]  via-black/50o-transparent" />
               
               <div className="absolute bottom-12 left-12 right-12 text-white">
                 <motion.div
@@ -106,7 +106,7 @@ const IndustryProblemSection = () => {
           </div>
 
           {/* Right Content Panel */}
-          <div className="space-y-16">
+          <div className="space-y-8">
             <div className="space-y-10">
               {[
                 "Pushing inventory instead of protecting suitability",

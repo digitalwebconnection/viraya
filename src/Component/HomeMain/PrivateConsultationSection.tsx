@@ -19,7 +19,7 @@ const VirayaSection = () => {
   ];
 
   return (
-    <div className=" bg-[#ffffff] font-['Lora'] text-[#1F2A36] selection:bg-[#C7A25A] selection:text-white">
+    <div className=" bg-[#ffffff] px-6 md:px-0 font-['Lora'] text-[#1F2A36] selection:bg-[#C7A25A] selection:text-white">
       
       {/* Main Hero Section */}
       <section className="relative flex max-w-7xl mx-auto flex-col lg:flex-row min-h-screen overflow-hidden">

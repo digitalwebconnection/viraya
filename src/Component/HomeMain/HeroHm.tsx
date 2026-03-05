@@ -38,7 +38,7 @@ const HeroSection = () => {
     };
 
     return (
-        <section id="home" className="relative min-h-screen flex flex-col justify-center bg-[#1F2A36] overflow-hidden text-white">
+        <section id="home" className="relative min-h-screen py-10 md:py-0 flex flex-col justify-center bg-[#1F2A36] overflow-hidden text-white">
 
             {/* Background Slideshow */}
             <div className="absolute inset-0 z-0 overflow-hidden">
@@ -169,10 +169,10 @@ const HeroSection = () => {
 
 
             {/* Mobile Stats */}
-            <div className="md:hidden mt-16 px-6 grid grid-cols-2 gap-4 pb-10 relative z-10">
+            <div className="md:hidden  px-6 grid grid-cols-2 gap-4  relative z-10">
                 <div className="p-4 bg-white/5 border border-white/10">
                     <p className="text-[#b68d5c] font-semibold font-['Inter']">
-                        ₹XXX+ Cr
+                        ₹150+ Cr
                     </p>
                     <p className="text-[8px] uppercase text-gray-400 font-['Inter']">
                         Advisory Value

@@ -9,7 +9,7 @@ const FounderSection = () => {
   return (
     <section
       id="founder"
-      className="relative bg-white overflow-hidden py-12">
+      className="relative bg-white px-6 md:px-0 overflow-hidden py-12">
 
       {/* Soft Background Tint */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#1F2A36]/5 -skew-x-12 translate-x-32 z-0" />
@@ -145,7 +145,7 @@ const FounderSection = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="relative h-130 -mt-50"
+          className="relative md:h-130 md:-mt-50"
         >
           <div className="relative bg-white  overflow-hidden ">
 
@@ -156,7 +156,7 @@ const FounderSection = () => {
             />
 
             {/* Floating Badge */}
-            <div className="absolute top-8 right-8 bg-white shadow-lg px-6 py-4 rounded-xl border border-[#1F2A36]/10">
+            <div className=" hidden md:block absolute top-8 right-8 bg-white shadow-lg px-6 py-4 rounded-xl border border-[#1F2A36]/10">
               <p
                 className="text-xs uppercase text-[#1F2A36]/60 tracking-[0.2em]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}

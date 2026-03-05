@@ -31,7 +31,6 @@ const logos = [
   { name: "Rashmi", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKKhKORjuntV08icBvsoWAEeP0Ib3RimbfzQ&s" },
   { name: "Aaryan", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLncF77SRdfgrtk6i5kURzD5RzMuItuChq7w&s" },
   { name: "Goodvalue", src: "https://imgcdn.houssed.com/assets/Files/Developer/FirmLogos/5bb25d8ef88aa89de603038ae8af255a.webp" },
-  // { name: "Saiyaam", src: "/builders/saiyaam.png" },
   { name: "Binori", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmKf7yAuX7Bwq_tetCTgObgOTTbcFae91E8w&s" },
   { name: "Triveni", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4uRe_GJluussaLqRDvaYGeE-4Gsa_8P-8PA&s" },
 ];
