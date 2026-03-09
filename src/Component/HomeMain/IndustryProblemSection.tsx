@@ -20,6 +20,8 @@ const IndustryProblemSection = () => {
     >
 
       <div  className="max-w-7xl mx-auto px-0 relative z-10">
+
+        
         
         {/* Section Label with Letter Spacing Animation */}
         <div className="flex justify-center mb-6">

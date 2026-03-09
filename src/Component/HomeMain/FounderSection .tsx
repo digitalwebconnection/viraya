@@ -9,7 +9,7 @@ const FounderSection = () => {
   return (
     <section
       id="founder"
-      className="relative bg-white px-6 md:px-0 overflow-hidden py-12">
+      className="relative bg-white px-6 md:px-0 z-10 overflow-hidden py-12">
 
       {/* Soft Background Tint */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#1F2A36]/5 -skew-x-12 translate-x-32 z-0" />

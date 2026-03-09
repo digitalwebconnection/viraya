@@ -41,7 +41,6 @@ const AnimatedNumber = ({ value, suffix }: { value: number; suffix: string }) =>
 const CredibilitySection = () => {
   const stats = [
     { label: "Years of Advisory Experience", value: 10, suffix: "+" },
-    { label: "Transaction Advisory Value", value: 150, suffix: "Cr+" },
     { label: "Investment Evaluations", value: 98, suffix: "+" },
     { label: "Premium Relationships", value: 100, suffix: "+" },
     { label: "Step Advisory Process", value: 14, suffix: "" },
@@ -49,7 +48,7 @@ const CredibilitySection = () => {
   ];
 
   return (
-    <section id="about" className="relative  py-14 bg-white overflow-hidden">
+    <section id="about" className="relative z-10 py-14 bg-white overflow-hidden">
 
       {/* Floating Gold Aura */}
       <motion.div
@@ -129,7 +128,7 @@ const CredibilitySection = () => {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {stats.map((stat, index) => (
             <motion.div
               key={index}

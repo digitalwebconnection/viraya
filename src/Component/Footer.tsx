@@ -8,6 +8,7 @@ import {
   Phone,
   Mail,
   Pin,
+  ShieldCheck,
 } from "lucide-react";
 import logo from "../assets/Virayalogo.png";
 import { useRef, useState } from "react";
@@ -27,7 +28,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-[#121a23] text-gray-400 pt-10 pb-6 relative">
+      <footer className="bg-[#121a23] text-gray-400 pt-10 pb-6 relative" id="contact">
 
         {/* Top Accent Line */}
         <div className="absolute top-0 left-0 w-full h-0.5 bg-linear-to-r from-transparent via-[#c7a25a] to-transparent"></div>
@@ -148,8 +149,13 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex gap-6 items-start hover:text-[#c7a25a] transition"
               >
-                <Pin size={45} className="text-[#c7a25a] mt-1" />
+                <Pin size={55} className="text-[#c7a25a] mt-1" />
                 730 Sun Gravitas, Shyamal Cross Rd, Rajmani Society, Shyamal, Ahmedabad, Gujarat 380015
+              </a>
+              <a href=""
+               className="flex gap-5 items-start hover:text-[#c7a25a] transition">
+                <ShieldCheck   className="text-[#c7a25a] w-10 h-10 mt-1"/>
+                AG/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/AA00789/190329R2
               </a>
 
             </div>

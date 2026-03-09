@@ -1,4 +1,5 @@
 import AboutVirayaSection from "./AboutVirayaSection"
+import Affiliations from "./Affiliations"
 import CommercialInvestmentAdvisory from "./CommercialInvestmentAdvisory"
 import CredibilitySection from "./CredibilitySection"
 import FounderSection from "./FounderSection "
@@ -23,6 +24,7 @@ const HomeMain = () => {
       <HeroSection />
       <CredibilitySection />
       <AboutVirayaSection />
+      <Affiliations/>
       <IndustryProblemSection />
       <FounderSection />
       <Philosophy />

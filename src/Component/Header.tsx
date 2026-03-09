@@ -2,11 +2,10 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "../assets/Virayalogo.png";
-import PersonalServiceForm from "./HomeMain/PersonalServiceForm";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [open, setOpen] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
   const lastScrollY = useRef(0);
 
@@ -35,6 +34,7 @@ const Header = () => {
     { name: "Partners", id: "partners" },
     { name: "Protocol", id: "protocol" },
     { name: "Why Viraya", id: "whyviraya" },
+    { name: "Contact", id: "contact" }
   ];
 
   const serviceLinks = [
@@ -104,13 +104,6 @@ const Header = () => {
               </a>
             ))}
 
-            {/* Contact Button */}
-            <button
-              onClick={() => setOpen(true)}
-              className="hover:text-[#c7a25a] transition duration-300"
-            >
-              Contact
-            </button>
 
           </nav>
 
@@ -161,25 +154,12 @@ const Header = () => {
               </a>
             ))}
 
-            {/* Mobile Contact */}
-            <button
-              onClick={() => {
-                setIsOpen(false);
-                setOpen(true);
-              }}
-              className="block"
-            >
-              Contact
-            </button>
+      
           </div>
         )}
       </header>
 
-      {/* ✅ POPUP OUTSIDE HEADER */}
-      <PersonalServiceForm
-        isOpen={open}
-        onClose={() => setOpen(false)}
-      />
+    
     </>
   );
 };
