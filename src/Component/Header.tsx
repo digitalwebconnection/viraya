@@ -81,12 +81,12 @@ const Header = () => {
                 Services <ChevronDown size={16} />
               </button>
 
-              <div className="absolute left-0 mt-4 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+              <div className="absolute left-0 mt-4 w-38 bg-white text-black rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                 {serviceLinks.map((service, index) => (
                   <a
                     key={index}
                     href={`#${service.id}`}
-                    className="block px-4 py-3 hover:bg-gray-100"
+                    className="block px-6 py-3 hover:bg-[#1F2A36] hover:text-[#c7a25a] "
                   >
                     {service.name}
                   </a>
