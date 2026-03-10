@@ -14,6 +14,11 @@ import logo from "../assets/Virayalogo.png";
 import { useRef, useState } from "react";
 import PersonalServiceForm from "../Component/HomeMain/PersonalServiceForm";
 
+import image1 from "../assets/rera-649x348-removebg-preview.png"
+import image2 from "../assets/Ahmedabad_Realtors_Association-removebg-preview.png"
+import image3 from "../assets/National_Association_of_Realtors_-_USA-removebg-preview.png"
+
+
 const Footer = () => {
   const COMPANY_URL = "https://digitalwebconnection.com";
   const linkRef = useRef<HTMLAnchorElement | null>(null);
@@ -25,6 +30,22 @@ const Footer = () => {
       window.open(COMPANY_URL, "_blank", "noopener,noreferrer");
     }, 0);
   }
+
+
+
+  const affiliations = [
+    {
+
+      img: image1,
+    },
+    {
+
+      img: image2,
+    },
+    {
+      img: image3,
+    },
+  ];
 
   return (
     <>
@@ -115,6 +136,29 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+            <section className="py-6 ms-0 md:-ms-40 ">
+              <div className="px-6 bg-white">
+
+                {/* Cards */}
+                <div className="grid md:grid-cols-3 gap-6">
+
+                  {affiliations.map((item, index) => {
+
+                    return (
+                      <div
+                        key={index}
+                        className=" items-center flex justify-center"
+                      >
+
+                        <img src={item.img} alt="" className="  object-cover " />
+
+                      </div>
+                    );
+                  })}
+
+                </div>
+              </div>
+            </section>
           </div>
 
           {/* Contact / CTA */}
@@ -153,8 +197,8 @@ const Footer = () => {
                 730 Sun Gravitas, Shyamal Cross Rd, Rajmani Society, Shyamal, Ahmedabad, Gujarat 380015
               </a>
               <a href=""
-               className="flex gap-5 items-start hover:text-[#c7a25a] transition">
-                <ShieldCheck   className="text-[#c7a25a] w-10 h-10 mt-1"/>
+                className="flex gap-5 items-start hover:text-[#c7a25a] transition">
+                <ShieldCheck className="text-[#c7a25a] w-10 h-10 mt-1" />
                 AG/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/AA00789/190329R2
               </a>
 

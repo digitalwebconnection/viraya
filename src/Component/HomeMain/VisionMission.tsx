@@ -47,7 +47,7 @@ const VisionMissionWhite = () => {
                     <h1 className="font-playfair text-6xl md:text-8xl font-light text-[#1F2A36] mb-4 tracking-tight">
                         Our <span className=" text-[#C7A25A]">Purpose</span>
                     </h1>
-                    <p className="font-montserrat ms-5 uppercase tracking-[0.5em] text-gray-400 text-xs font-bold">
+                    <p className="font-montserrat  ms-5 uppercase tracking-[0.5em] text-gray-400 text-xs font-bold">
                         Vision • Mission • Values
                     </p>
                 </motion.div>
@@ -55,8 +55,8 @@ const VisionMissionWhite = () => {
                 {/* Vision & Mission Sections */}
                 <div className="grid lg:grid-cols-2 gap-20 mb-10">
                     {[
-                        { label: 'V', title: 'Vision', text: 'Viraya Realty’s vision is to become West Ahmedabad’s most trusted real estate advisory for individuals and businesses who value structure, ethics, and long-term clarity in their investment decisions. Trust, in this context, is not built through volume or visibility, but through consistency, transparency, and disciplined guidance. The aim is to set a benchmark for thoughtful advisory—where every recommendation is backed by research, integrity, and a genuine commitment to client success.' },
-                        { label: 'M', title: 'Mission', text: 'The mission of Viraya Realty is to combine disciplined market analysis with deeply personalized advisory. Every client’s financial comfort, long-term objectives, and risk appetite are carefully understood before any opportunity is recommended. By aligning data-driven evaluation with human understanding, the firm ensures that each investment serves a clear purpose, provides financial comfort, and contributes to sustainable future growth.The objective is simple yet powerful: to ensure that every real estate decision is structured, suitable, and strategically positioned for the years ahead. ' }
+                        { label: 'V', title: 'Vision', text: 'To be the advisory of choice, providing unmatched service for long term Global Real Estate investments, helping our clients create value in an ethical and transparent business environment.' },
+                        { label: 'M', title: 'Mission', text: 'To assist our clients, invest in Global Real Estate, those that have the potential for safe returns and high capital appreciation. ' }
                     ].map((item, i) => (
                         <motion.div
                             key={i}
@@ -72,7 +72,7 @@ const VisionMissionWhite = () => {
                                 {item.label}
                             </motion.span>
                             <div className="relative z-10">
-                                <h2 className="font-playfair text-[#C7A25A] text-4xl mb-6 flex items-center gap-4">
+                                <h2 className="font-playfair font-bold text-[#C7A25A] text-4xl mb-6 flex items-center gap-4">
                                     {item.title}
                                     <span className="h-px w-12 bg-[#C7A25A]/30 group-hover:w-20 group-hover:bg-[#C7A25A] transition-all duration-500"></span>
                                 </h2>

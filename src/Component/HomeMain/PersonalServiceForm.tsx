@@ -87,8 +87,8 @@ export default function PersonalServiceForm({
               <form className="space-y-6" onSubmit={handleSubmit}>
 
                 {/* Web3Forms Hidden Fields */}
-                <input type="hidden" name="access_key" value="e38d772a-c5ce-4001-9e72-023faa4e2828"/>
-                <input type="hidden" name="subject" value="Personal Service Inquiry "/>
+                <input type="hidden" name="access_key" value="e38d772a-c5ce-4001-9e72-023faa4e2828" />
+                <input type="hidden" name="subject" value="Personal Service Inquiry " />
 
                 {/* Section 1 */}
                 <div className="space-y-1">
@@ -104,8 +104,7 @@ export default function PersonalServiceForm({
                         name="name"
                         required
                         placeholder="John Doe"
-                        className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-2 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all"
-                      />
+                        className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-2 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all" />
                     </div>
 
                     <div className="group space-y-2">
@@ -118,8 +117,7 @@ export default function PersonalServiceForm({
                         name="email"
                         required
                         placeholder="john@example.com"
-                        className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-2 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all"
-                      />
+                        className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-2 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all" />
                     </div>
 
                   </div>
@@ -134,8 +132,7 @@ export default function PersonalServiceForm({
                       name="phone"
                       required
                       placeholder="+91 XXXXX XXXXX"
-                      className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-2 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all"
-                    />
+                      className="w-full bg-slate-50 border-2 border-transparent rounded-2xl px-6 py-2 text-slate-900 placeholder:text-slate-300 focus:bg-white focus:border-[#b68d5c]/30 focus:ring-4 focus:ring-[#b68d5c]/5 outline-none transition-all" />
                   </div>
                 </div>
 
@@ -154,11 +151,10 @@ export default function PersonalServiceForm({
                     </p>
 
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                      {["₹2 – 3 Cr","₹3 – 4 Cr","Above 4 Cr"].map((item) => (
+                      {["₹2 – 3 Cr", "₹3 – 4 Cr", "Above 4 Cr"].map((item) => (
                         <label
                           key={item}
-                          className="relative flex items-center justify-center p-2 border-2 border-slate-100 rounded-2xl cursor-pointer hover:border-[#b68d5c]/20 hover:bg-slate-50 transition-all has-checked:border-[#b68d5c] has-checked:bg-[#b68d5c]/5"
-                        >
+                          className="relative flex items-center justify-center p-2 border-2 border-slate-100 rounded-2xl cursor-pointer hover:border-[#b68d5c]/20 hover:bg-slate-50 transition-all has-checked:border-[#b68d5c] has-checked:bg-[#b68d5c]/5"    >
                           <input
                             type="radio"
                             name="budget"
@@ -184,11 +180,10 @@ export default function PersonalServiceForm({
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                      {["Immediately","3 Months","6 Months"].map((item) => (
+                      {["Immediately", "3 Months", "6 Months"].map((item) => (
                         <label
                           key={item}
-                          className="relative flex items-center justify-center p-2 border-2 border-slate-100 rounded-2xl cursor-pointer hover:border-[#b68d5c]/20 hover:bg-slate-50 transition-all has-checked:border-[#b68d5c] has-checked:bg-[#b68d5c]/5"
-                        >
+                          className="relative flex items-center justify-center p-2 border-2 border-slate-100 rounded-2xl cursor-pointer hover:border-[#b68d5c]/20 hover:bg-slate-50 transition-all has-checked:border-[#b68d5c] has-checked:bg-[#b68d5c]/5">
                           <input
                             type="radio"
                             name="timeline"
@@ -212,8 +207,7 @@ export default function PersonalServiceForm({
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.98 }}
                     type="submit"
-                    className="group w-full bg-[#b68d5c] hover:bg-slate-900 text-white py-4 rounded-2xl font-bold tracking-[0.2em] uppercase text-xs shadow-xl shadow-[#b68d5c]/20 transition-all flex items-center justify-center gap-3"
-                  >
+                    className="group w-full bg-[#b68d5c] hover:bg-slate-900 text-white py-4 rounded-2xl font-bold tracking-[0.2em] uppercase text-xs shadow-xl shadow-[#b68d5c]/20 transition-all flex items-center justify-center gap-3" >
                     Submit Inquiry
                     <Send size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </motion.button>
