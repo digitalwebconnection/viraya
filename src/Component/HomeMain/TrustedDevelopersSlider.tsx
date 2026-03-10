@@ -37,7 +37,7 @@ const logos = [
 
 export default function TrustedDevelopersSlider() {
   return (
-    <section id="partners" className="py-20 bg-white overflow-hidden">
+    <section id="partners" className="py-10 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-['Playfair_Display'] font-semibold text-gray-900 mb-4">
           Trusted Developers We Work With
@@ -50,7 +50,7 @@ export default function TrustedDevelopersSlider() {
       {/* Continuous Slider */}
       <div className="relative w-full overflow-hidden">
         <motion.div
-          className="flex w-max gap-6 items-center"
+          className="flex w-max gap-2 md:gap-6 items-center"
           animate={{ x: ["0%", "-50%"] }}
           transition={{
             ease: "linear",
@@ -61,11 +61,11 @@ export default function TrustedDevelopersSlider() {
           {[...logos, ...logos].map((logo, index) => (
             <div
               key={index}
-              className="flex items-center justify-center min-w-45"
+              className="flex items-center justify-center min-w-35 md:min-w-45"
             >
               <img
                 src={logo.src}
-                className="h-12 md:h-25 object-contain transition duration-300"
+                className="h-18 md:h-25 object-contain transition duration-300"
               />
             </div>
           ))}

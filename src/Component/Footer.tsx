@@ -31,8 +31,6 @@ const Footer = () => {
     }, 0);
   }
 
-
-
   const affiliations = [
     {
 
@@ -197,8 +195,8 @@ const Footer = () => {
                 730 Sun Gravitas, Shyamal Cross Rd, Rajmani Society, Shyamal, Ahmedabad, Gujarat 380015
               </a>
               <a href=""
-                className="flex gap-5 items-start hover:text-[#c7a25a] transition">
-                <ShieldCheck className="text-[#c7a25a] w-10 h-10 mt-1" />
+                className="flex  gap-5 items-start hover:text-[#c7a25a] transition  ">
+                <ShieldCheck className="text-[#c7a25a]  w-12 h-12 mt-1" />
                 AG/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/AA00789/190329R2
               </a>
 
