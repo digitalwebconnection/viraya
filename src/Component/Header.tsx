@@ -1,8 +1,6 @@
-"use client";
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "../assets/Virayalogo.png";
-
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -104,7 +102,6 @@ const Header = () => {
               </a>
             ))}
 
-
           </nav>
 
           {/* Mobile Menu Button */}
@@ -154,12 +151,10 @@ const Header = () => {
               </a>
             ))}
 
-      
           </div>
         )}
       </header>
 
-    
     </>
   );
 };

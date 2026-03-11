@@ -14,7 +14,7 @@ import logo from "../assets/Virayalogo.png";
 import { useRef, useState } from "react";
 import PersonalServiceForm from "../Component/HomeMain/PersonalServiceForm";
 
-import image1 from "../assets/rera-649x348-removebg-preview.png"
+import image1 from "../assets/rara.png"
 import image2 from "../assets/Ahmedabad_Realtors_Association-removebg-preview.png"
 import image3 from "../assets/National_Association_of_Realtors_-_USA-removebg-preview.png"
 
@@ -135,10 +135,12 @@ const Footer = () => {
               ))}
             </ul>
             <section className="py-6 ms-0 md:-ms-40 ">
+              <h1 className=" text-center font-bold font-serif ms-0 md:-ms-6 mb-2 text-[#c7a25a]">Industry Affiliations</h1>
+
               <div className="px-6 bg-white">
 
                 {/* Cards */}
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-3 py-2 gap-6">
 
                   {affiliations.map((item, index) => {
 
