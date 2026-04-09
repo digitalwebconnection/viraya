@@ -1,4 +1,4 @@
-"use client";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { X, Send } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -218,7 +218,12 @@ export default function PersonalServiceForm({
                     </p>
                   )}
                 </div>
-
+<p className="text-xs text-gray-500 mt-2 me-10">
+            By submitting, you agree to our{" "}
+            <Link to="/privacy-policy" className="text-blue-950 underline">
+              Privacy Policy
+            </Link>
+          </p>
               </form>
             </div>
           </motion.div>

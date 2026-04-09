@@ -13,5 +13,5 @@ if (rootEl) {
     </BrowserRouter>
   );
 } else {
-  console.error("Root element not found for hydration");
+  console.error("Root element not fou nd for hydration");
 }

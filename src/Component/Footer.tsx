@@ -1,5 +1,4 @@
-"use client";
-
+import { Link } from "react-router-dom";
 import {
   Facebook,
   Instagram,
@@ -233,6 +232,12 @@ const Footer = () => {
               Digital Web Connection
             </span>
           </a>
+          <p className="text-xs text-gray-500 mt-2 me-10">
+            By submitting, you agree to our{" "}
+            <Link to="/privacy-policy" className="text-white underline">
+              Privacy Policy
+            </Link>
+          </p>
         </div>
       </footer>
 

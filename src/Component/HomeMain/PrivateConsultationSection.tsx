@@ -10,7 +10,7 @@ const VirayaSection = () => {
     animate: { opacity: 1, y: 0 },
   };
   const transition: Transition = { duration: 0.8, ease: "easeOut" };
-   const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const services = [
     { title: "Grade A+ Commercial", icon: <Building2 className="w-5 h-5" /> },
     { title: "Exclusive Residences", icon: <Gem className="w-5 h-5" /> },
@@ -20,13 +20,13 @@ const VirayaSection = () => {
 
   return (
     <div className=" bg-[#ffffff] px-6 md:px-0 font-['Lora'] text-[#1F2A36] selection:bg-[#C7A25A] selection:text-white">
-      
+
       {/* Main Hero Section */}
       <section className="relative flex max-w-7xl mx-auto flex-col lg:flex-row min-h-screen overflow-hidden">
-        
+
         {/* Left Side: Consultation Hook */}
         <div className="w-full lg:w-1/2  flex flex-col justify-center bg-white">
-          <motion.div 
+          <motion.div
             initial="initial"
             animate="animate"
             variants={fadeInUp}
@@ -39,13 +39,13 @@ const VirayaSection = () => {
               With <span className=" text-[#C7A25A]">Param Doshi</span>
             </h1>
             <p className="text-lg leading-relaxed max-w-md opacity-80 mb-12">
-              Make a decision that will still feel right years later. 
+              Make a decision that will still feel right years later.
               No pressure. No obligation. Only structured guidance.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               {services.map((service, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   whileHover={{ x: 10 }}
                   className="flex items-center gap-4 p-4 border-l-2 border-[#C7A25A]/20 hover:border-[#C7A25A] transition-colors"
@@ -56,20 +56,20 @@ const VirayaSection = () => {
               ))}
             </div>
 
-            
- <button
-                        onClick={() => setOpen(true)}
-                        className="bg-[#b68d5c] flex hover:bg-white hover:text-black text-black px-12 py-4 font-semibold tracking-wide transition-all duration-300 shadow-xl rounded-full active:scale-95 font-['Inter']"
-                    >
-                       Schedule Consultation
-              <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </button>
-                    <PersonalServiceForm
-                        isOpen={open}
-                        onClose={() => setOpen(false)}
-                    />
-              
-    
+
+            <button
+              onClick={() => setOpen(true)}
+              className="bg-[#b68d5c] flex hover:bg-white hover:text-black text-black px-12 py-4   items-center font-semibold tracking-wide transition-all duration-300 shadow-xl rounded-full active:scale-95 font-['Inter']"
+            >
+              Schedule Consultation
+              <ChevronRight className="w-4 h-4 group-hover:translate-x-1  transition-transform" />
+            </button>
+            <PersonalServiceForm
+              isOpen={open}
+              onClose={() => setOpen(false)}
+            />
+
+
           </motion.div>
         </div>
 
@@ -77,15 +77,15 @@ const VirayaSection = () => {
         <div className="w-full lg:w-1/2 relative min-h-125 bg-[#1F2A36]">
           {/* Replace this div with your actual Image component */}
           <div className="absolute inset-0  transition-all duration-1000">
-            <img 
-              src={image} 
-              alt="Luxury Real Estate" 
+            <img
+              src={image}
+              alt="Luxury Real Estate"
               className="w-full h-full object-cover"
             />
           </div>
 
           {/* Manifesto Floating Card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -108,20 +108,20 @@ const VirayaSection = () => {
       {/* Trust Bar */}
       <section className="bg-[#1F2A36] py-12 px-8 text-center">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-[#C7A25A]">
-           <div className="text-center">
-              <h3 className="font-['Montserrat'] text-3xl font-light mb-1">Grade A+</h3>
-              <p className="text-[10px] uppercase tracking-[0.2em] opacity-70 text-white">Asset Standard</p>
-           </div>
-           <div className="h-px w-12 bg-[#C7A25A]/30 hidden md:block"></div>
-           <div className="text-center">
-              <h3 className="font-['Montserrat'] text-3xl font-light mb-1">Transparent</h3>
-              <p className="text-[10px] uppercase tracking-[0.2em] opacity-70 text-white">Communication</p>
-           </div>
-           <div className="h-px w-12 bg-[#C7A25A]/30 hidden md:block"></div>
-           <div className="text-center">
-              <h3 className="font-['Montserrat'] text-3xl font-light mb-1">Ethical</h3>
-              <p className="text-[10px] uppercase tracking-[0.2em] opacity-70 text-white">Advocacy</p>
-           </div>
+          <div className="text-center">
+            <h3 className="font-['Montserrat'] text-3xl font-light mb-1">Grade A+</h3>
+            <p className="text-[10px] uppercase tracking-[0.2em] opacity-70 text-white">Asset Standard</p>
+          </div>
+          <div className="h-px w-12 bg-[#C7A25A]/30 hidden md:block"></div>
+          <div className="text-center">
+            <h3 className="font-['Montserrat'] text-3xl font-light mb-1">Transparent</h3>
+            <p className="text-[10px] uppercase tracking-[0.2em] opacity-70 text-white">Communication</p>
+          </div>
+          <div className="h-px w-12 bg-[#C7A25A]/30 hidden md:block"></div>
+          <div className="text-center">
+            <h3 className="font-['Montserrat'] text-3xl font-light mb-1">Ethical</h3>
+            <p className="text-[10px] uppercase tracking-[0.2em] opacity-70 text-white">Advocacy</p>
+          </div>
         </div>
       </section>
     </div>

@@ -3,9 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/public/apple-touch-icon.png" />
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VIRAYAREALTY</title>
+
+    <!-- ✅ Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Viraya",
+      "image": "https://viraya.in/assets/founder-DuAyX6MI.png",
+      "@id": "https://viraya.in/",
+      "url": "https://viraya.in/",
+      "telephone": "+919821377645",
+      "description": "Viraya offers modern real estate solutions with well-designed residential spaces, quality construction, and prime locations, ensuring comfort, connectivity, and long-term value.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "730 Sun Gravitas, Shyamal Cross Rd, Rajmani Society, Shyamal",
+        "addressLocality": "Ahmedabad",
+        "addressRegion": "Gujarat",
+        "postalCode": "380015",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.0108839,
+        "longitude": 72.5307888
+      },
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://viraya.in/assets/Virayalogo-DMP_gZCR.png",
+        "width": 179.03,
+        "height": 64
+      },
+      "sameAs": [
+        "https://www.facebook.com/virayarealty",
+        "https://www.instagram.com/virayarealty",
+        "https://www.linkedin.com/company/virayarealty/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+919821377645",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["en-IN"]
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+          ],
+          "opens": "10:30",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "00:00",
+          "closes": "00:00"
+        }
+      ]
+    }
+    </script>
+
   </head>
   <body>
     <div id="root"></div>
